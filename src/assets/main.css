@@ -1,0 +1,84 @@
+@import './base.css';
+
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  background-color: #F8EFED;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-weight: 700;
+  color: #517A39;
+}
+
+.btn-primary {
+  background-color: #517A39;
+  border-color: #517A39;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #3E5C2B;
+  border-color: #3E5C2B;
+}
+
+.form-check-input:checked {
+  background-color: #517A39;
+  border-color: #517A39;
+}
+
+.community-card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.community-card:hover {
+  transform: translateY(-5px);
+}
+
+.recommendation-items {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.scenario-image img {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#app {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: block;
+  }
+
+  #app {
+    display: block;
+    padding: 0;
+  }
+}
